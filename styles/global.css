@@ -52,3 +52,9 @@
     --body-sm: 400 14px/normal var(--font3);
     --body-xs: 400 12px/normal var(--font3);
 }
+
+body {
+    font: var(--body-md);
+    color: var(--shape-body);
+    background: var(--shape-background);
+}

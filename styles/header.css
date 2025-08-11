@@ -1,0 +1,28 @@
+header{
+    background-image: url(/assets/Background.png);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 400px;
+    height: 728px;
+    border-radius: 0.75rem;
+    padding: 2rem 2rem 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.invite-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 1rem;
+}
+.logo-titulo {
+    font: var(--logo);
+    color: var(--pink);
+}
+
+.text-titulo{
+    font: var(--body-md);
+    color: var(--text-heading);
+}
