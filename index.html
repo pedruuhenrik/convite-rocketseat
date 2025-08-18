@@ -13,9 +13,53 @@
     <header>
         <img src="/assets/Logo.svg" alt="Logo do Convite" class="logo">
         <div class="invite-text">
-            <h1 class="logo-titulo">Festivite</h1>
+            <span class="logo-titulo">Festivite</span>
             <p class="text-titulo">Crie um convite digital para seu evento</p>
         </div>
     </header>
+    <main>
+        <form method="post">
+            <h1 class="titulo-formulario">Crie seu convite</h1>
+            <div class="subtitle-form">
+                <img src="/assets/calendar.svg" alt="calendário">
+                <h2>Sobre o evento</h2>
+            </div>
+
+            <div class="title-form">
+                <label for="event">Título</label>
+                <input class="event-input" name="event" type="text" placeholder="Nome do evento">
+            </div>
+
+            <div class="date-form">
+                <div class="dates">
+                    <label for="date-early">Início</label>
+                    <input name="date-early" class="layoutdate" type="datetime-local" required>
+                </div>
+
+                <div class="dates">
+                    <label for="date-late">Fim</label>
+                    <input name="date-late" class="layoutdate" type="datetime-local" required>
+                </div>
+            </div>
+
+            <div class="tipo-form">
+                <label for="tipo">Presencial</label>
+                <input name="tipo" type="radio">
+
+                <label for="tipo">Online</label>
+                <input name="tipo" type="radio">
+            </div>
+
+            <div class="local-form">
+                <label for="local">Local</label>
+                <input name="local" type="text" placeholder="Link ou endereço">
+            </div>
+            
+            <div class="description-form">
+                <label for="descrição">Descrição</label>
+                <textarea name="descrição" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

@@ -1,0 +1,98 @@
+main{
+    background-color: var(--shape-body);
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+h2{
+    font: var(--heading-sm);
+    color: var(--text-body);
+}
+
+.titulo-formulario {
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+.subtitle-form{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Nome do Evento */
+.title-form{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    gap: 0.75rem;
+}
+
+.event-input{
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    font: var(--body-md);
+    color: var(--text-heading);
+    border-radius: 0.5rem;
+    padding: 0.813rem 1rem;
+}
+
+.event-input:focus{
+    outline: 2px solid var(--brand-light);
+}
+
+.event-input::placeholder{
+    color: var(--input-placeholder);
+}
+/* ------------------------- */
+
+
+/* Data */
+.date-form{
+    display: flex;
+    gap: 1rem;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+
+    position: relative;
+}
+
+.layoutdate{
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    border-radius: 0.5rem;
+    padding: 0.813rem 1rem;
+    width: 17rem;
+}
+
+.layoutdate:valid{
+    color: var(--text-heading);
+}
+
+.layoutdate:checked {
+    outline: 2px solid var(--brand-light);
+}
+
+/* Usamos :focus-within no elemento pai (.dates) porque o foco do input de data
+é capturado por elementos internos do navegador, fazendo com que o :focus
+direto no input (.layoutdate:focus) não funcione de forma confiável. */
+.dates:focus-within .layoutdate {
+    outline: 2px solid var(--brand-light);
+}
+
+/* ------------------------- */
+
+
+
+
