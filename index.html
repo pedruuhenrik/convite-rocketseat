@@ -42,22 +42,36 @@
                 </div>
             </div>
 
-            <div class="tipo-form">
-                <label for="tipo">Presencial</label>
-                <input name="tipo" type="radio">
-
-                <label for="tipo">Online</label>
-                <input name="tipo" type="radio">
+            <section class="form-row">
+            <div class="form-column">
+                <h3>Tipo</h3>
+                <div class="tipo-form">
+                    <div>
+                        <input name="tipo" class="layoutradio" type="radio" id="presencial" checked> 
+                        <label for="presencial" class="radio1">
+                        <img src="assets/building-2.svg" alt="Presencial Icon">
+                        <span>Presencial</span>
+                    </label>
+                    </div>
+                    <div>
+                        <input name="tipo" class="layoutradio" type="radio" id="online">
+                        <label for="online" class="radio1">
+                        <img src="assets/video.svg" alt="Online Icon">
+                        <span>Online</span>
+                    </label>
+                    </div>
+                </div>
             </div>
 
-            <div class="local-form">
+            <div class="form-column">
                 <label for="local">Local</label>
-                <input name="local" type="text" placeholder="Link ou endereço">
+                <input name="local" type="text" class="localization" placeholder="Link ou endereço">
             </div>
+            </section>
             
             <div class="description-form">
                 <label for="descrição">Descrição</label>
-                <textarea name="descrição" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                <textarea name="descrição" class="campo-text" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
         </form>
     </main>

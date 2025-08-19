@@ -57,6 +57,26 @@ body {
     font: var(--body-md);
     color: var(--shape-body);
     background: var(--shape-background);
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+header{
+    width: 30%;
+    margin: 0.938;
+    position: inherit;
+}
+
+main{
+    margin: 0.938rem;
+    padding: 5rem;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    border-radius: 0.75rem;
 }
 
 
@@ -73,3 +93,13 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     opacity: 0;
     cursor: pointer;
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio1 {
+    background-color: var(--shape-hover);
+    color: var(--text-heading);
+}
+
