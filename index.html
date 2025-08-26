@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/index.css">
     <title>Convite de Aniversário</title>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -133,7 +134,7 @@
                     </div>
 
                     <div class="themes">
-                    <h3>Tema do evento</h3>
+                        <h3>Tema do evento</h3>
                         <input type="radio" name="tema" id="tema-aniversario" class="input-tema">
                         <label for="tema-aniversario" class="card">
                             <img src="/assets/image/aniversary.png" alt="Tema de Aniversário">
@@ -206,6 +207,62 @@
                             <p>Outro</p>
                         </label>
                     </div>
+
+                    <div class="persona2">
+                        <div class="form-column">
+                            <h3>Estilo</h3>
+                            <div class="switch-container">
+                                <input type="checkbox" id="toggle">
+                                <label for="toggle" class="switch">
+                                    <span class="slider"></span>
+                                </label>
+                                <div class="textos-toggle">
+                                    <span class="texto-escuro">Escuro</span>
+                                    <span class="texto-claro">Claro</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upload form-column">
+                            <h3>Foto de Capa</h3>
+                            <div class="file">
+                                <input type="file" id="foto-capa" class="file-input" required>
+                                <label for="foto-capa" class="file-label">
+                                    <img src="assets/upload-blue.svg" alt="Icone de Upload">
+                                    Selecionar
+                                </label>
+                                <div class="display-file" id="display-file">
+                                    <span class="default-text">Nenhum arquivo selecionado</span>
+                                    <span class="selected-text">Arquivo selecionado!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section class="contatos">
+                        <div class="subtitle-form">
+                            <img src="assets/contact.svg" alt="Icone de Contato">
+                            <h2>Dados para contato</h2>
+                        </div>
+                        <div class="title-form">
+                            <label for="event">Nome</label>
+                            <input class="event-input" name="event" type="text" placeholder="Nome completo">
+                        </div>
+
+                        <div class="date-form">
+                            <div class="dates">
+                                <label for="date-early">E-mail</label>
+                                <input name="date-early" class="layoutdate" type="text" placeholder="exemplo@email.com">
+                            </div>
+
+                            <div class="dates">
+                                <label for="date-late">Telefone</label>
+                                <input name="date-late" class="layoutdate" type="text" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
             </form>
         </main>
     </div>

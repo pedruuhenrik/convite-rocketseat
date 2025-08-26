@@ -1,0 +1,9 @@
+.contatos {
+    margin-top: 3rem;
+}
+
+hr{
+    border: 1px solid var(--input-stroke);
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
