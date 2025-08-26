@@ -57,28 +57,21 @@ body {
     font: var(--body-md);
     color: var(--shape-body);
     background: var(--shape-background);
+}
+
+.container {
     display: flex;
-    width: 100%;
-    gap: 2rem;
-    justify-content: center;
-    position: relative;
+    flex-direction: row;
+    align-items: stretch;  
+    gap: 4rem;
+    max-width: 1440px;
+    margin: 2rem auto;
+    padding: 0 2rem;      
 }
 
-header{
-    width: 30%;
-    margin: 0.938;
-    position: inherit;
+header {
+    flex: 0 0 400px;
 }
-
-main{
-    margin: 0.938rem;
-    padding: 5rem;
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    border-radius: 0.75rem;
-}
-
 
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     position: absolute;

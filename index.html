@@ -1,79 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Convite de Aniversário</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/Logo.svg" alt="Logo do Convite" class="logo">
-        <div class="invite-text">
-            <span class="logo-titulo">Festivite</span>
-            <p class="text-titulo">Crie um convite digital para seu evento</p>
-        </div>
-    </header>
-    <main>
-        <form method="post">
-            <h1 class="titulo-formulario">Crie seu convite</h1>
-            <div class="subtitle-form">
-                <img src="/assets/calendar.svg" alt="calendário">
-                <h2>Sobre o evento</h2>
+    <div class="container">
+        <header>
+            <img src="/assets/Logo.svg" alt="Logo do Convite" class="logo">
+            <div class="invite-text">
+                <span class="logo-titulo">Festivite</span>
+                <p class="text-titulo">Crie um convite digital para seu evento</p>
             </div>
-
-            <div class="title-form">
-                <label for="event">Título</label>
-                <input class="event-input" name="event" type="text" placeholder="Nome do evento">
-            </div>
-
-            <div class="date-form">
-                <div class="dates">
-                    <label for="date-early">Início</label>
-                    <input name="date-early" class="layoutdate" type="datetime-local" required>
+        </header>
+        <main>
+            <form method="post">
+                <h1 class="titulo-formulario">Crie seu convite</h1>
+                <div class="subtitle-form">
+                    <img src="/assets/calendar.svg" alt="calendário">
+                    <h2>Sobre o evento</h2>
                 </div>
 
-                <div class="dates">
-                    <label for="date-late">Fim</label>
-                    <input name="date-late" class="layoutdate" type="datetime-local" required>
+                <div class="title-form">
+                    <label for="event">Título</label>
+                    <input class="event-input" name="event" type="text" placeholder="Nome do evento">
                 </div>
-            </div>
 
-            <section class="form-row">
-            <div class="form-column">
-                <h3>Tipo</h3>
-                <div class="tipo-form">
-                    <div>
-                        <input name="tipo" class="layoutradio" type="radio" id="presencial" checked> 
-                        <label for="presencial" class="radio1">
-                        <img src="assets/building-2.svg" alt="Presencial Icon">
-                        <span>Presencial</span>
-                    </label>
+                <div class="date-form">
+                    <div class="dates">
+                        <label for="date-early">Início</label>
+                        <input name="date-early" class="layoutdate" type="datetime-local" required>
                     </div>
-                    <div>
-                        <input name="tipo" class="layoutradio" type="radio" id="online">
-                        <label for="online" class="radio1">
-                        <img src="assets/video.svg" alt="Online Icon">
-                        <span>Online</span>
-                    </label>
+
+                    <div class="dates">
+                        <label for="date-late">Fim</label>
+                        <input name="date-late" class="layoutdate" type="datetime-local" required>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-column">
-                <label for="local">Local</label>
-                <input name="local" type="text" class="localization" placeholder="Link ou endereço">
-            </div>
-            </section>
-            
-            <div class="description-form">
-                <label for="descrição">Descrição</label>
-                <textarea name="descrição" class="campo-text" placeholder="Escreva sobre os detalhes do evento"></textarea>
-            </div>
-        </form>
-    </main>
+                <section class="form-row">
+                    <div class="form-column">
+                        <h3>Tipo</h3>
+                        <div class="tipo-form">
+                            <div>
+                                <input name="tipo" class="layoutradio" type="radio" id="presencial" checked>
+                                <label for="presencial" class="radio1">
+                                    <img src="assets/building-2.svg" alt="Presencial Icon">
+                                    <span>Presencial</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input name="tipo" class="layoutradio" type="radio" id="online">
+                                <label for="online" class="radio1">
+                                    <img src="assets/video.svg" alt="Online Icon">
+                                    <span>Online</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-column">
+                        <label for="local">Local</label>
+                        <input name="local" type="text" class="localization" placeholder="Link ou endereço">
+                    </div>
+                </section>
+
+                <div class="description-form">
+                    <label for="descrição">Descrição</label>
+                    <textarea name="descrição" class="campo-text"
+                        placeholder="Escreva sobre os detalhes do evento"></textarea>
+                </div>
+
+                <div class="personalizacao">
+                    <div class="subtitle-form">
+                        <img src="/assets/paintbrush-vertical.svg" alt="calendário">
+                        <h2>Personalização</h2>
+                    </div>
+                    <h3>Cor principal</h3>
+                    <div class="seletor-cores">
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-1">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-2">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-3">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-4">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-5">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-6">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-7">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-8">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-9">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-10">
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cor-principal" class="cor-11">
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="themes">
+                    <h3>Tema do evento</h3>
+                        <input type="radio" name="tema" id="tema-aniversario" class="input-tema">
+                        <label for="tema-aniversario" class="card">
+                            <img src="/assets/image/aniversary.png" alt="Tema de Aniversário">
+                            <p>Aniversário</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-infantil" class="input-tema">
+                        <label for="tema-infantil" class="card">
+                            <img src="/assets/image/infantil.png" alt="Tema Infantil">
+                            <p>Infantil</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-formatura" class="input-tema">
+                        <label for="tema-formatura" class="card">
+                            <img src="/assets/image/formatura.png" alt="Tema Formatura">
+                            <p>Formatura</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-casamento" class="input-tema">
+                        <label for="tema-casamento" class="card">
+                            <img src="/assets/image/casamento.png" alt="Tema Casamento">
+                            <p>Casamento</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-bebe" class="input-tema">
+                        <label for="tema-bebe" class="card">
+                            <img src="/assets/image/chá de bebe.png" alt="Tema Chá de Bebê">
+                            <p>Chá de Bebê</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-panela" class="input-tema">
+                        <label for="tema-panela" class="card">
+                            <img src="/assets/image/chá de panela.png" alt="Tema Chá de Panela">
+                            <p>Chá de Panela</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-carnaval" class="input-tema">
+                        <label for="tema-carnaval" class="card">
+                            <img src="/assets/image/carnaval.png" alt="Tema Carnaval">
+                            <p>Carnaval</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-pascoa" class="input-tema">
+                        <label for="tema-pascoa" class="card">
+                            <img src="/assets/image/pascoa.png" alt="Tema de Páscoa">
+                            <p>Páscoa</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-junina" class="input-tema">
+                        <label for="tema-junina" class="card">
+                            <img src="/assets/image/saojoao.png" alt="Tema de Festa Junina">
+                            <p>São João</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-halloween" class="input-tema">
+                        <label for="tema-halloween" class="card">
+                            <img src="/assets/image/hallowen.png" alt="Tema de Halloween">
+                            <p>Halloween</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-natal" class="input-tema">
+                        <label for="tema-natal" class="card">
+                            <img src="/assets/image/natal.png" alt="Tema de Natal">
+                            <p>Natal</p>
+                        </label>
+
+                        <input type="radio" name="tema" id="tema-outro" class="input-tema">
+                        <label for="tema-outro" class="card">
+                            <img src="/assets/image/outro.png" alt="Outro">
+                            <p>Outro</p>
+                        </label>
+                    </div>
+            </form>
+        </main>
+    </div>
 </body>
+
 </html>

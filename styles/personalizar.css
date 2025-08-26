@@ -1,0 +1,60 @@
+.seletor-cores{
+    display: flex;
+    justify-content: space-around;
+}
+.seletor-cores label span {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid var(--shape-button);
+}
+
+.seletor-cores input[type="radio"]:checked + span {
+    border-color: var(--brand-light);
+}
+
+.seletor-cores .cor-1 + span {
+    background-color: var(--brand-mid);
+}
+
+.seletor-cores .cor-2 + span {
+    background-color: var(--navy); 
+}
+
+.seletor-cores .cor-3 + span {
+    background-color: var(--purple); 
+}
+
+.seletor-cores .cor-4 + span {
+    background-color: var(--fuschia); 
+}
+
+.seletor-cores .cor-5 + span {
+    background-color: var(--pink); 
+}
+
+.seletor-cores .cor-6 + span {
+    background-color: var(--danger); 
+}
+
+.seletor-cores .cor-7 + span {
+    background-color: var(--orange); 
+}
+
+.seletor-cores .cor-8 + span {
+    background-color: var(--yellow); 
+}
+
+.seletor-cores .cor-9 + span {
+    background-color: var(--lime); 
+}
+
+.seletor-cores .cor-10 + span {
+    background-color: var(--green); 
+}
+
+.seletor-cores .cor-11 + span {
+    background-color: var(--cyan); 
+}
