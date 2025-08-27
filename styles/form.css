@@ -201,7 +201,7 @@ direto no input (.layoutdate:focus) não funcione de forma confiável. */
     gap: 0.75rem;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 36.5rem;
 }
 .campo-text{
     background-color: var(--input-base);
@@ -209,7 +209,7 @@ direto no input (.layoutdate:focus) não funcione de forma confiável. */
     font: var(--body-md);
     color: var(--text-heading); 
     border-radius: 0.5rem;
-    width: 35rem;
+    width: 36.5rem;
     height: 8.5rem;
     padding: 0.813rem 1rem;
     max-width: 100%;
